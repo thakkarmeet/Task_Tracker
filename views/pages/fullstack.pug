@@ -1,4 +1,52 @@
 extends ../layout
 
 block content
-    h1 FullStack Test
+    h2 FullStack Test: Search
+
+    h3 Objective
+    p.
+        Showcase of your technique, skill and business logic by creating a
+        search box that integrates with a third-party API, in this scenario,
+        #[a(href="http://www.tvmaze.com/api") The TVmaze TV API].
+
+    p.
+        Your search box should be able to search both television shows and
+        movies. Once a search has been entered the results should provide a
+        maximum of 10 entries based on the item put in the search box.
+        Example: "Golden Girls" or "Star Trek".
+
+    p.
+        The results should include the
+
+    h3 Requirements
+    ul
+        li A search box with an “enter” button
+        li Ability to search both shows and movies
+        li Ability to bookmark or directly link to results.
+
+    h3 Bonus
+    p If you have the extra time and inclination, give these a try:
+    ul
+        li Options for filtering the results
+        li Link to a "Detailed view" for a movie/show.
+        li Sortable results
+
+    h3 Program Languages
+    ul
+        li React &amp; Javascript preferred, however please used whichever
+           | language(s) you feel most comfortable using.
+        li #[a(href="https://github.com/axios/axios") Axios] has been provided
+           | for http requests, as that's what our production sites typically
+           | use, but feel free to use another library if you're more
+           | comfortable.
+        li This is a Fullstack test, so ideally the solution will involve some
+           | server-side functionality.
+
+    h3 Getting started
+    p.
+        Create a new route for #[a(href="/movies") #[code /movies]] and start
+        building out the functionality there.
+
+    hr
+    p
+        a(href="/") Back to the tests.
