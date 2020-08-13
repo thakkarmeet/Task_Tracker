@@ -76,7 +76,6 @@ const serve = () => sync.init({
         "views/**/*.*",
         "frontend/dist/**/*.*",
     ],
-    browser: "google chrome",
     port: 7000
 });
 

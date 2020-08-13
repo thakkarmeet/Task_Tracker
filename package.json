@@ -2,7 +2,7 @@
   "name": "labx-developer-test",
   "version": "1.0.0",
   "description": "A starting point for various developer tests.",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "jest --coverage",
     "dev": "node-dev server.js & gulp dev"
@@ -40,6 +40,7 @@
     "pug": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-prop-types": "^0.4.0",
     "sass-module-importer": "^1.4.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
