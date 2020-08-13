@@ -51,7 +51,7 @@ None of the JS for the backend is transpiled or processed in any way. Node 12
 supports most of the popular new JS syntax out-of the box, so the only thing you
 will probably need to keep in mind is to use `require()` instead of `import`.
 
-When you run `npm run dev`, the server is started used [`node-dev`][node-dev],
+When you run `npm run dev`, the server is started using [`node-dev`][node-dev],
 which will watch for changes to the backend code and restart itself as needed.
 It does not watch the view templates, for that see the Frontend sections.
 
@@ -76,7 +76,7 @@ the root of the project.
 
 #### CSS
 
-Styles for this site are written as [scss][scss] files. The scss files can be 
+Styles for this site are written as [Sass scss][sass] files. The scss files can be 
 in the `frontend/src/scss` folder, or in the `frontend/src/jsx/` folder.
 
 For styles in the `scss/` folder, only the `index.scss` file is directly
@@ -100,7 +100,7 @@ to use react.
 
 The JS (including JSX) is all bundled starting from `frontend/src/js/index.js`.
 That means that any JS or JSX you want on the page needs to be imported (either
-directly or by another file that is imported) in that file. The resulting JS 
+directly or by another file that is imported) in that file. The resulting JS
 file is incldued at the bottom of the `<body>` tag.
 
 #### Images
@@ -115,3 +115,4 @@ performed.
 [gulp]: https://gulpjs.com/
 [node-dev]: https://www.npmjs.com/package/node-dev
 [pug]: https://pugjs.org/api/getting-started.html
+[sass]: https://sass-lang.com/
