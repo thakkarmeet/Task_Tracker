@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template:
+        "header " calc(3em + 42px)
+        "content" auto
+        "footer " 4.5em
+    ;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-bottom: 0.25em;
+}
+
+ul, ol {
+    padding-left: 1.5em;
+}
+
+header.main {
+    padding: 1.5em;
+    display: flex;
+
+    h1 {
+        display: block;
+        align-self: flex-end;
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+
+    & > a {
+        margin-left: auto;
+    }
+}
+
+main {
+    padding: 1.5em;
+}
+
+footer.main {
+    text-align: center;
+    padding: 1.5em;
+}

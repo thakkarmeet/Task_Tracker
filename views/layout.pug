@@ -4,8 +4,11 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/styles.css")
-        title= title + " | Test Site"
+        title= title + " | LabX Developer Tests"
     body
-        block content
-            h1 Placeholder
+        include partials/header
+        main
+            block content
+                h1 Placeholder
+        include partials/footer
         script(src="js/main.js")
