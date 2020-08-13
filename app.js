@@ -15,6 +15,7 @@ module.exports = () => {
 
     app.use("/frontend", require("./routes/frontend"));
     app.use("/fullstack", require("./routes/fullstack"));
+    app.use("/todo", require("./routes/todo"));
 
     return app;
 };

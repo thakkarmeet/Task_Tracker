@@ -102,7 +102,7 @@ const dev = series(
         backend,
         serve,
         function recompile () {
-            watch(["frontend/src/js/**/*.js", "frontend/src/jsx/**/*.js"], js);
+            watch(["frontend/src/js/**/*.js", "frontend/src/jsx/**/*.jsx"], js);
             watch(["frontend/src/scss/**/*.scss", "frontend/src/jsx/**/*.scss"], scss);
             watch("frontend/dist/images/**/*", images);
         },
