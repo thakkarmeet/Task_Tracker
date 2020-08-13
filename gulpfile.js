@@ -7,6 +7,7 @@ const browserify = require("browserify");
 const buffer = require("vinyl-buffer");
 const concat = require("gulp-concat");
 const del = require("del");
+const spawn = require("child_process").spawn;
 const moduleImporter = require("sass-module-importer");
 const sass = require("gulp-sass");
 const source = require("vinyl-source-stream");
@@ -80,12 +81,25 @@ const serve = () => sync.init({
 });
 
 /**
+ * Start the backend server.
+ */
+const backend = (cb) => {
+    const nodeDev = spawn("npx", ["node-dev", "server.js"]);
+
+    // eslint-disable-next-line no-console
+    nodeDev.stdout.on("data", (data) => console.log(`${data}`));
+    nodeDev.stderr.on("data", (data) => console.error(`${data}`));
+    nodeDev.on("close", cb);
+};
+
+/**
  * Auto-build and browsersync.
  */
 const dev = series(
     clean,
     parallel(js, scss, images),
     parallel(
+        backend,
         serve,
         function recompile () {
             watch(["frontend/src/js/**/*.js", "frontend/src/jsx/**/*.js"], js);
@@ -98,6 +112,7 @@ const dev = series(
 module.exports.default = dev;
 module.exports.clean = clean;
 module.exports.dev = dev;
+module.exports.backend = backend;
 module.exports.images = images;
 module.exports.js = js;
 module.exports.scss = scss;
