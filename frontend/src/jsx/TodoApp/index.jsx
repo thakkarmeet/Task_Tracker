@@ -1,12 +1,15 @@
 import React from "react";
+import List from "./List";
 
 const TodoApp = () => {
+
     return (
         <div className="TodoApp">
-            <h1>Todo</h1>
-            <p>Build your app here.</p>
+            <div className="lists"><List /></div>
         </div>
+
     );
+
 };
 
 export { TodoApp };

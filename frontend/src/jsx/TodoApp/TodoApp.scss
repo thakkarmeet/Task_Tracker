@@ -1,0 +1,124 @@
+body {
+    background-color:  #000;
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+    transition: .9s;
+}
+
+.instructions{
+    text-align: center;
+    font-size: larger;
+    color: #fff;
+}
+
+.instructions  span{
+    color: #05F4B7;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+.task-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50vh;
+    min-height: 60vh;
+    background: #211166;
+    text-align: center;
+    margin: 90px auto;
+    padding-bottom: 25px;
+    }
+
+.task-app:hover{
+    box-shadow: 1px 1px 20px 1px #05F4B7;
+}
+
+.header {
+    margin: 32px 0;
+    color: #05F4B7;
+}
+
+.task-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.task-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    align-self: center;
+    width: 50%;
+}
+
+.task-input::placeholder {
+    color: #e2e2e2;
+    opacity: 0.5;
+}
+
+.task-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    background-color: #111218;
+    color: #fff;
+    align-self: center;
+    width: 50%;
+    cursor: pointer;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.task-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    color: #fff;
+    background-color: #E4380C;
+    padding: 10px;
+    font-size: 20px;
+
+}
+.task-row-complete {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    color: #12151F;
+    background:  #1CFF14;
+    opacity: 0.5;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.icons {
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.checkbox_icon{
+    color: #fff;
+    margin-right: 5px;
+}
+.edit-icon {
+    color: #fff;
+    margin-right: 5px;
+}
+.delete-icon {
+    margin-right: 5px;
+    color: #fff;
+}

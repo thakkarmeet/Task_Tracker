@@ -1,8 +1,23 @@
 extend ../layout
 
 block content
-    #TodoApp
+    .instructions
+        H1#header Instructions 
+        p 
+            span 1.
+            |   Enter a task to do and press 'Add' and your task will be added to the list
+        p 
+            span 2.
+            |   Entered it incorrectly? No worries, click on the 'Edit' icon to make changes
+        p 
+            span 3.
+            |   Done with your task? Just click on the 'Checkbox' to indicate it as done
+        p 
+            span 4.
+            |   Not doing the task anymore? delete it by using the 'Delete' icon
 
+
+    #TodoApp
     hr
     p
         a(href="/frontend") Back to instructions.
